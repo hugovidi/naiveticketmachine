@@ -30,8 +30,18 @@ public class TicketMachine
         total = 0;
     }
     
+     /**
+     * Creamos el metodo empty que simula el proceso de sacar todas las monedas
+     * de la maquina
+     */
+    public void empty()
+    {
+        balance = 0;
+        total = 0;
+    }
     
-    /*
+    
+    /**
      * Crea una maquina de tickets en la que el precio de los billetes lo determina
      * el parametro que se le pasa al constructor
      */
@@ -44,11 +54,7 @@ public class TicketMachine
     total = 0;
     }
     
-    
-    
-    
-    
-    
+          
     public void prompt()
     {
         System.out.println("Please, insert the correct amount of money");
