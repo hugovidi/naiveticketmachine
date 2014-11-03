@@ -31,6 +31,24 @@ public class TicketMachine
     }
     
     
+    /*
+     * Crea una maquina de tickets en la que el precio de los billetes lo determina
+     * el parametro que se le pasa al constructor
+     */
+    
+    public TicketMachine(int precioBillete)
+    {
+    
+    price = precioBillete;
+    balance = 0;
+    total = 0;
+    }
+    
+    
+    
+    
+    
+    
     public void prompt()
     {
         System.out.println("Please, insert the correct amount of money");
