@@ -34,11 +34,27 @@ public class TicketMachine
      * Creamos el metodo empty que simula el proceso de sacar todas las monedas
      * de la maquina
      */
-    public void empty()
+    public int emptyAfter()
     {
         balance = 0;
         total = 0;
+        return total;
     }
+    
+     /**
+     * Creamos el metodo empty que simula el proceso de sacar todas las monedas
+     * de la maquina
+     */
+    public int emptyBefore()
+    {
+    int tmp = total;
+    total = 0;
+    return tmp;
+    
+    }
+        
+        
+        
     
     
     /**
